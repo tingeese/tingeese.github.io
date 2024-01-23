@@ -1,0 +1,6 @@
+{% macro email_script(name) %}
+    <script>
+        let elink = document.getElementById("mlink");
+        elink.href = ['mailto:', '{{ name }}', "@", "robertc", ".", "me"];
+    </script>
+{% endmacro email_script %}

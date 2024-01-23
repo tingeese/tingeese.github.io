@@ -1,0 +1,10 @@
+<script defer>
+    document.addEventListener("DOMContentLoaded", function () {
+        let emailLinks = document.querySelectorAll(".email-link");
+        emailLinks.forEach(function (elink) {
+            let address = [atob(elink.dataset.a), "@", atob(elink.dataset.b)].join("");
+            elink.href = `mailto:${address}`;
+            elink.textContent = address;
+        });
+    });
+</script>

@@ -1,0 +1,2 @@
+{% set image = resize_image(path=path, width=1024, height=1024, op="fit_width") %}
+<img class="hero" src="{{ image.url }}" alt="{{ alt }}" />

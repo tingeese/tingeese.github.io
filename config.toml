@@ -1,0 +1,46 @@
+# The URL the site will be built for
+base_url = "https://tingeese.dev"
+
+# The site title and description; used in feeds by default.
+title = "Tin Geese LLC"
+description = "Tin Geese LLC builds software focused on business process automation and data-driven decision making."
+
+# The default language; used in feeds.
+default_language = "en"
+
+# The site theme to use.
+theme = "anemone"
+
+# For overriding the default output directory `public`, set it to another value (e.g.: "docs")
+output_dir = "public"
+
+# The default author for pages
+author = "Tin Geese"
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+
+taxonomies = [
+#    # You can enable/disable RSS
+#    {name = "categories", feed = true},
+#    {name = "tags", feed = true},
+]
+
+[markdown]
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = true
+
+[extra]
+default_theme = "dark"
+author = "Tin Geese"
+twitter_card = false
+favicon = "logo.png"
+
+header_nav = [
+#    {url = "/", name_en = "/home/"},
+#    {url = "/code", name_en = "/code/"},
+#    {url = "/data", name_en = "/data/"},
+#    {url = "/game", name_en = "/game/"},
+#    {url = "/life", name_en = "/life/"},
+]
