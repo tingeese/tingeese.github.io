@@ -35,12 +35,9 @@ highlight_code = true
 default_theme = "dark"
 author = "Tin Geese"
 twitter_card = false
-favicon = "logo.png"
+favicon = "images/goose_solo.png"
 
 header_nav = [
-#    {url = "/", name_en = "/home/"},
-#    {url = "/code", name_en = "/code/"},
-#    {url = "/data", name_en = "/data/"},
-#    {url = "/game", name_en = "/game/"},
-#    {url = "/life", name_en = "/life/"},
+    {url = "/", name_en = "|Tin Geese LLC|"},
+    {url = "/about", name_en = "|About Us|"},
 ]
