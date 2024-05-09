@@ -67,6 +67,8 @@ html {
   font-size: 62.5%;
   scrollbar-color: var(--metaColor) var(--bgColor);
   scrollbar-width: thin;
+  height: 100%;
+  margin: 0;
 }
 
 body {
@@ -78,6 +80,7 @@ body {
   overflow-wrap: break-word;
   background: var(--bgColor);
   color: var(--fgColor);
+  height: 100%;
 }
 
 h1 {
@@ -241,7 +244,7 @@ textarea {
   min-height: 100vh;
   min-height: 100svh;
   display: grid;
-  grid-template-rows: auto 1fr auto;
+  grid-template-rows: auto 1fr auto auto;
   gap: 2rem;
 
 }
@@ -303,12 +306,34 @@ textarea {
   margin-bottom: .75rem;
 }
 
+.footnote-spacer {
+  flex-grow: 1;
+}
+
+.footnote-reference > a {
+  font-size: small;
+  color: var(--dimBlue)
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 .footnote-definition {
   margin: 0 0 0 2rem;
+  font-size: small;
+  color: var(--metaColor)
+  align-self: end;
+}
+
+.footnote-definition > p {
+  color: var(--blue)
 }
 
 .footnote-definition-label {
-  color: var(--metaColor);
+  color: var(--dimBlue);
 }
 
 .footnote-definition p {
@@ -353,10 +378,24 @@ textarea {
   }
 }
 
+.floatCenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.noborder {
+  border: none;
+}
+
+.cushionBottom {
+  margin-bottom: 5rem;
+}
+
 .hero {
   max-width: 100%;
   border: dashed .2rem var(--metaColor);
-  margin-top: 5rem;
+  padding: 1%;
 }
 
 .disclaimer {

@@ -1,0 +1,8 @@
+{% set image = resize_image(path=path, width=width, height=height, op=op) %}
+<img
+        {% if class %}class="{{class}}"{% endif %}
+        src="{{ image.url }}"
+        {% if alt %}alt="{{alt}}"{% endif %}
+        {% if op == "fit_width" %}width="{{width}}" {% endif %}
+        {% if op == "fit_height" %}height="{{height}}" {% endif %}
+/>
